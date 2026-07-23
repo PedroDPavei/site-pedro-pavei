@@ -30,7 +30,7 @@ body {
 
 /* Header */
 .header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     padding-bottom: 40px;
 }
@@ -57,12 +57,13 @@ body {
 .contact-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 16px;
     color: var(--texto-suave);
     font-size: 0.9em;
     margin-bottom: 28px;
     margin-top: 10px;
+    align-content: left;
 }
 
 .btn-download {
