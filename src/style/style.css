@@ -6,6 +6,7 @@
     --texto: #e8e8e8;
     --texto-suave: #a3a3a3;
     --texto-fraco: #707070;
+    zoom: 125%;
 }
 
 * {
@@ -30,9 +31,8 @@ body {
 /* Header */
 .header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding-bottom: 40px;
-    border-bottom: 1px solid var(--borda);
 }
 
 .header h1 {
@@ -62,6 +62,7 @@ body {
     color: var(--texto-suave);
     font-size: 0.9em;
     margin-bottom: 28px;
+    margin-top: 10px;
 }
 
 .btn-download {
@@ -97,8 +98,29 @@ section h2 {
     border-bottom: 1px solid var(--borda);
 }
 
-#sobre p {
+#contato p {
     color: var(--texto-suave);
+}
+
+a:link {
+  color: rgb(102, 102, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(102, 102, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(123, 169, 238);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(152, 191, 250);
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /* Educação */
