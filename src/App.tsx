@@ -2,9 +2,6 @@ import { motion } from 'motion/react';
 import { Mail, Linkedin, Github, FileText } from 'lucide-react';
 import './App.css';
 
-// Caminhos de placeholder — substitua pelos arquivos reais em `public/images/`
-const PROFILE_IMAGE_PLACEHOLDER = '/images/perfil.png';
-const RESUME_PLACEHOLDER = '/images/curriculo.pdf';
 
 const EDUCATION = [
   {
@@ -39,7 +36,7 @@ export default function App() {
             className="header__avatar"
           >
             <img
-              src= 'src\imagens\perfil.png'
+              src= 'public\imagens\perfil.png'
               alt="Pedro Pavei"
               className="header__avatar-img"
               onError={(e) => {
@@ -116,7 +113,7 @@ export default function App() {
             <Github className="links__icon" />
             <span>Github</span>
           </a>
-          <a href='src\imagens\curriculo.pdf' target="_blank" rel="noreferrer" className="links__item">
+          <a href='public\imagens\curriculo.pdf' target="_blank" rel="noreferrer" className="links__item">
             <FileText className="links__icon" />
             <span>Currículo</span>
           </a>
