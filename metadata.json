@@ -1,0 +1,8 @@
+{
+  "name": "Portfólio de Pedro Dal Ponte",
+  "description": "Portfólio minimalista para Pedro Dal Ponte Pavei da Silva, Desenvolvedor de Software.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
