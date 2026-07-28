@@ -1,0 +1,243 @@
+/* ==========================================================================
+   Layout geral
+   ========================================================================== */
+
+.portfolio {
+  min-height: 100vh;
+  background-color: #050505;
+  color: #d4d4d8;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.portfolio ::selection {
+  background-color: #d4d4d8;
+  color: #000;
+}
+
+.portfolio__content {
+  max-width: 42rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: auto 0;
+}
+
+@media (min-width: 640px) {
+  .portfolio {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    padding: 6rem;
+  }
+  .portfolio__content {
+    gap: 3.5rem;
+  }
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.header__avatar {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header__avatar:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3), 0 10px 25px rgba(255, 255, 255, 0.05);
+}
+
+.header__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.header__avatar:hover .header__avatar-img {
+  transform: scale(1.1);
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .header__text {
+    gap: 0.375rem;
+  }
+}
+
+.header__name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #fff;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .header__name {
+    font-size: 3rem;
+  }
+}
+
+.header__role {
+  font-size: 1.125rem;
+  color: #71717a;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .header__role {
+    font-size: 1.25rem;
+  }
+}
+
+/* ==========================================================================
+   Sobre
+   ========================================================================== */
+
+.about__text {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #a1a1aa;
+}
+
+@media (min-width: 768px) {
+  .about__text {
+    font-size: 1.125rem;
+  }
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .links {
+    gap: 2rem;
+  }
+}
+
+.links__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #71717a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links__item:hover {
+  color: #fff;
+}
+
+.links__icon {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.links__item:hover .links__icon {
+  transform: scale(1.1);
+}
+
+/* ==========================================================================
+   Educação
+   ========================================================================== */
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education__title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #52525b;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .education__item {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 2rem;
+  }
+}
+
+.education__period {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.875rem;
+  color: #52525b;
+  flex-shrink: 0;
+  width: 8rem;
+  transition: color 0.3s ease;
+}
+
+.education__item:hover .education__period {
+  color: #a1a1aa;
+}
+
+.education__desc {
+  color: #d4d4d8;
+  transition: color 0.3s ease;
+}
+
+.education__item:hover .education__desc {
+  color: #fff;
+}
