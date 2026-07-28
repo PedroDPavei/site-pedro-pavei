@@ -36,7 +36,7 @@ export default function App() {
             className="header__avatar"
           >
             <img
-              src= '/images/perfil.png'
+              src= '/imagens/perfil.png'
               alt="Pedro Pavei"
               className="header__avatar-img"
               onError={(e) => {
@@ -113,7 +113,7 @@ export default function App() {
             <Github className="links__icon" />
             <span>Github</span>
           </a>
-          <a href='/images/curriculo.pdf' target="_blank" rel="noreferrer" className="links__item">
+          <a href='/imagens/curriculo.pdf' target="_blank" rel="noreferrer" className="links__item">
             <FileText className="links__icon" />
             <span>Currículo</span>
           </a>
