@@ -3,8 +3,8 @@ import { Mail, Linkedin, Github, FileText } from 'lucide-react';
 import './App.css';
 
 // Caminhos de placeholder — substitua pelos arquivos reais em `public/images/`
-const PROFILE_IMAGE_PLACEHOLDER = '/images/perfil-placeholder.png';
-const RESUME_PLACEHOLDER = '/images/curriculo-placeholder.pdf';
+const PROFILE_IMAGE_PLACEHOLDER = '/images/perfil.png';
+const RESUME_PLACEHOLDER = '/images/curriculo.pdf';
 
 const EDUCATION = [
   {
